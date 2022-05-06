@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insect catching game..</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <h1>Catch <br>.._The Insect_..</h1>
+      <button class="btn" id="start-btn">Play Game</button>
+    </div>
+
+    <div class="screen">
+      <h1>What is your Favourite Insect ?</h1>
+      <ul class="insects-list">
+        <li>
+          <button class="choose-insect-btn">
+            <p>Lady-Bug</p>
+            <img
+              src="http://pngimg.com/uploads/ladybug/ladybug_PNG3967.png"
+              alt="Lady Bug"
+            />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Catterpiller</p>
+            <img
+              src="http://pngimg.com/uploads/caterpillar/caterpillar_PNG77.png"
+              alt="Catterpiller"
+            />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Scorpion</p>
+            <img
+              src="http://pngimg.com/uploads/scorpion/scorpion_PNG12138.png"
+              alt="scorpion"
+            />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Spider</p>
+            <img
+              src="http://pngimg.com/uploads/spider/small/spider_PNG11.png"
+              alt="Spider"
+            />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>GrassHopper</p>
+            <img
+              src="http://pngimg.com/uploads/grasshopper/small/grasshopper_PNG14.png"
+              alt="grasshopper"
+            />
+          </button>
+        </li>
+        <li>
+          <button class="choose-insect-btn">
+            <p>Dragon-Fly</p>
+            <img
+              src="http://pngimg.com/uploads/dragonfly/dragonfly_PNG25.png"
+              alt="dragonfly"
+            />
+          </button>
+        </li>
+      </ul>
+
+      <p class="p1">
+        Let's See how many points you can collect in 30 Seconds...
+      </p>
+    </div>
+
+    <div class="screen game-container" id="game-container">
+      <h3 id="time" class="time">Time :- 00:00</h3>
+      <h3 id="score" class="score">Score :- 00</h3>
+      <h5 id="message" class="message">
+        ---- GAME OVER ----
+        <br>
+         <button class="refresh" onClick="window.location.reload();">
+           --- Restart Game ---
+         </button>
+       </h5>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

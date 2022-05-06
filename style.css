@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Mochiy+Pop+P+One&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://media.istockphoto.com/photos/circle-water-waves-picture-id1179662307?k=20&m=1179662307&s=612x612&w=0&h=lOpBXnnMVKHyt2XnjCB5dIfT4DVG2yAhcYETwOTigkU=);
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  font-family: 'Mochiy Pop P One', sans-serif;
+  overflow: hidden ;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: #fff;
+}
+
+h1 {
+  line-height: 1.5;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+
+.btn {
+  border: 2px solid black;
+  background-color: rgb(255, 255, 255);
+  color: #151d44;
+  padding: 20px 25px;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  color: black;
+  font-size: larger;
+  border: 5px double brown;
+  border-bottom-right-radius: 32px;
+  border-top-left-radius: 32px;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 1s ease-out;
+  ;
+}
+
+.p1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid brown;
+    border-radius: 35px;
+    width: 85%;
+    margin: 50px ;
+    padding: 15px;
+}
+
+.p1:hover{
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 3px dashed rgb(255, 74, 3);
+  transform: scale(1.1);
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.insects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.insects-list li {
+  margin: 10px;
+}
+
+.choose-insect-btn {
+  background-color: rgb(238, 235, 229);
+  border: 5px solid rgb(38, 14, 255);
+  border-radius: 50px;
+  color: rgb(224, 13, 41);
+  font-size: inherit;
+  cursor: grab;
+  font-family: inherit;
+  width: 200px;
+  height: 200px;
+}
+
+.choose-insect-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: #050405;
+  border: 5px double rgb(255, 0, 0);
+  transform: scale(1.1);
+}
+
+.choose-insect-btn:active {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.choose-insect-btn img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.game-container {
+  position: relative;
+}
+
+.time,
+.score {
+  position: absolute;
+  top: 50px;
+
+}
+
+.time {
+  left: 100px;
+}
+
+.score {
+  right: 100px;
+}
+
+.message {
+  line-height: 1.7;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: inherit;
+  width: 100%;
+  padding: 20px;
+  z-index: 100;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -150%);
+}
+
+.message.visible {
+  transform: translate(-50%, 150%);
+  opacity: 1;
+}
+
+.insect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.insect img {
+  width: 100px;
+  height: 100px;
+}
+
+.insect.caught {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.refresh{
+  font-size: 15px;
+  font-family: 'Mochiy Pop P One', sans-serif ;
+  font-weight: 500;
+  padding: 10px 25px 10px 25px;
+  margin-top:25px ;
+  background-color: rgb(255, 247, 247);
+  border-top: 5px dashed rgb(228, 18, 228);
+  border-bottom: 5px dashed rgb(228, 18, 228);
+  border-right: 5px dashed rgb(17, 230, 230);
+  border-left: 5px dashed rgb(17, 230, 230);
+  border-bottom-left-radius: 55px;
+  border-top-right-radius: 55px;
+}
+
+.refresh:hover{
+  
+  border-right: 5px dashed rgb(228, 18, 228);
+  border-left: 5px dashed rgb(228, 18, 228);
+  border-top: 5px dashed rgb(17, 230, 230);
+  border-bottom: 5px dashed rgb(17, 230, 230);
+  border-top-left-radius: 55px;
+  border-bottom-right-radius: 55px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+
+
